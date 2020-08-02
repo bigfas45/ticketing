@@ -6,6 +6,7 @@ import {OrderCreatedListener} from  './events/listeners/order-created-listener'
 
 const start = async () => {
   if (!process.env.JWT_KET) {
+    console.log("Starting........")
     throw new Error('JWT_KET must be defined');
   }
 
